@@ -87,7 +87,7 @@ router.post('/return', async (req, res) => {
 });
 
 // 用戶交易完成後的轉址
-router.get('/clientReturn', (req, res) => {
+router.get('clientReturn', (req, res) => {
   console.log('clientReturn:', req.body, req.query);
   res.render('return', { query: req.query });
 });
